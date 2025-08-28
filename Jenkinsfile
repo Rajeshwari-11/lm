@@ -8,6 +8,8 @@ pipeline {
     IMAGE_TAG = "${env.GIT_COMMIT.take(7)}"
   }
 
+
+
   stages {
     stage('Checkout') {
       steps {
