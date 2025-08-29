@@ -71,6 +71,12 @@ exports.refresh = async (req, res) => {
             res.json({ accessToken: newAccess });
 };
 
+
+
+
+
+
+
 exports.logout = async (req, res) => {
     const token = req.cookies?.refreshToken;
     if (token) {
